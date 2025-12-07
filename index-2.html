@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AI Plus Labs — Practical AI products</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%232f56e3' rx='18'/%3E%3Ctext x='50' y='57' font-size='46' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'%3EAI%3C/text%3E%3C/svg%3E" />
+  <meta name="description" content="AI Plus Labs — practical, lightweight AI products. WishlyAI, SmartPrompt, UnmarkIt and more." />
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#0f1724; --muted:#6b7280; --accent:#2f56e3; --card:#fbfdff;
+      --maxw:980px; --radius:14px; --glass: rgba(15,23,36,0.04);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    /* Dark mode overrides */
+    .dark{
+      --bg:#0b1020; --fg:#e6eef8; --muted:#9aa9c4; --accent:#5ea1ff; --card:#0f1724; --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;background:var(--bg);color:var(--fg);margin:0;padding:0}
+    .wrap{max-width:var(--maxw);margin:48px auto;padding:32px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo-mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#6ea3ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    .brand{font-weight:700;font-size:18px}
+
+    /* Hero */
+    .hero{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
+    .hero h1{font-size:28px;margin:0;line-height:1.05}
+    .hero p{margin:0;color:var(--muted);font-size:15px}
+
+    /* Card grid */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(15,23,36,0.06);border:1px solid rgba(15,23,36,0.03);display:flex;flex-direction:column;gap:12px;min-height:130px}
+    .card h3{margin:0;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+    .card .meta{margin-top:auto;display:flex;justify-content:space-between;align-items:center}
+    .btn{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:8px 12px;border-radius:10px;font-weight:600;text-decoration:none;font-size:13px}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(15,23,36,0.04);margin-top:36px;padding-top:18px;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:640px){.wrap{padding:18px;margin:24px auto}.grid{grid-template-columns:1fr}.hero h1{font-size:22px}}
+
+    /* Small utilities */
+    a.link{color:var(--accent);text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="logo-mark">AI</div>
+        <div>
+          <div class="brand">AI Plus Labs</div>
+          <div style="font-size:12px;color:var(--muted)">Practical AI for everyone</div>
+        </div>
+      </div>
+      <nav style="font-size:13px;color:var(--muted);display:flex;gap:12px;align-items:center">
+        <a class="link" href="#products">Products</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode" style="background:transparent;border:1px solid rgba(0,0,0,0.06);padding:6px 10px;border-radius:8px;font-size:13px;cursor:pointer">Dark</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Practical AI for everyone — lightweight tools that work.</h1>
+      <p>Focused AI products and experiments by a Princeton, NJ–based AI studio with remote teams across Asia and Africa.</p>
+    </section>
+
+    <section id="products">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h2 style="margin:0;font-size:16px">Products</h2>
+        <div style="font-size:13px;color:var(--muted)">Click a card to visit the product site</div>
+      </div>
+
+      <div class="grid" style="margin-top:12px">
+        <article class="card">
+          <h3>SmartPrompt</h3>
+          <p>Custom GPTs for students — over 1,000,000 conversations and counting. <a class="link" href="https://smartprompt.xyz/" target="_blank" rel="noopener">smartprompt.xyz</a></p>
+          <div class="meta">
+            <a class="btn" href="https://smartprompt.xyz/" target="_blank" rel="noopener">Visit site</a>
+            <span style="font-size:12px;color:var(--muted)">student agents</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>WishlyAI</h3>
+          <p>Personalized image and content generation for business offers, greetings, and campaigns. <a class="link" href="https://wishlyai.com" target="_blank" rel="noopener">wishlyai.com</a></p>
+          <div class="meta">
+            <a class="btn" href="https://wishlyai.com" target="_blank" rel="noopener">Visit site</a>
+            <span style="font-size:12px;color:var(--muted)">image & content</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>UnmarkIt</h3>
+          <p>Watermark remover for videos — fast, simple, and privacy-minded. <a class="link" href="https://unmarkit.com" target="_blank" rel="noopener">unmarkit.com</a></p>
+          <div class="meta">
+            <a class="btn" href="https://unmarkit.com" target="_blank" rel="noopener">Visit site</a>
+            <span style="font-size:12px;color:var(--muted)">video tools</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>AI Content Detection Suite</h3>
+          <p>AI-generated content detection for text, images, video, and audio — <strong>coming soon</strong>.</p>
+          <div class="meta">
+            <span></span>
+            <span style="font-size:12px;color:var(--muted)">coming soon</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Other experiments</h3>
+          <p>Small research projects and prototypes we explore occasionally.</p>
+          <div class="meta">
+            <span></span>
+            <span style="font-size:12px;color:var(--muted)">labs</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:32px">
+      <h2 style="margin:0;font-size:16px">Contact</h2>
+      <p style="color:var(--muted);margin-top:8px;font-size:14px">AI Plus Labs</p>
+
+      <form id="contact-form" style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start">
+        <input type="text" name="name" placeholder="Your name" required style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,36,0.06);grid-column:span 1" />
+        <input type="email" name="email" placeholder="Email" required style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,36,0.06);grid-column:span 1" />
+        <select name="product" style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,36,0.06);grid-column:span 1">
+          <option value="">Product of interest (optional)</option>
+          <option>SmartPrompt</option>
+          <option>WishlyAI</option>
+          <option>UnmarkIt</option>
+          <option>AI Content Detection Suite</option>
+          <option>Other</option>
+        </select>
+        <input type="text" name="company" placeholder="Company (optional)" style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,36,0.06);grid-column:span 1" />
+        <textarea name="message" placeholder="Tell us a bit about your needs" required style="padding:10px;border-radius:8px;border:1px solid rgba(15,23,36,0.06);grid-column:1 / -1;min-height:120px"></textarea>
+        <div style="grid-column:1 / -1;display:flex;justify-content:flex-end;gap:12px;align-items:center">
+          <button type="submit" class="btn">Send message</button>
+          <div id="form-status" style="font-size:13px;color:var(--muted)"></div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <div>© AI Plus Labs — Princeton, NJ</div>
+      <div style="display:flex;gap:16px;align-items:center">
+        <a class="link" href="mailto:hello@aipluslabs.com">hello@aipluslabs.com</a>
+        <span style="color:var(--muted)">•</span>
+        <a class="link" href="#">Privacy</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth scroll for the small menu
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+
+    // Dark mode toggle
+    (function(){
+      const btn = document.getElementById('theme-toggle');
+      const root = document.documentElement;
+      function setMode(dark){
+        if(dark){ root.classList.add('dark'); btn.textContent = 'Light'; }
+        else { root.classList.remove('dark'); btn.textContent = 'Dark'; }
+        localStorage.setItem('ai-plus-dark', dark ? '1' : '0');
+      }
+      // initialize from preference or system
+      const pref = localStorage.getItem('ai-plus-dark');
+      if(pref === null){
+        const sys = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        setMode(sys);
+      } else setMode(pref === '1');
+
+      btn.addEventListener('click', ()=>{
+        const isDark = root.classList.contains('dark');
+        setMode(!isDark);
+      });
+    })();
+
+    // Contact form behaviour — opens user's email client with prefilled message (works without a backend)
+    (function(){
+      const form = document.getElementById('contact-form');
+      const status = document.getElementById('form-status');
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const data = new FormData(form);
+        const name = data.get('name') || '—';
+        const email = data.get('email') || '—';
+        const company = data.get('company') || '—';
+        const product = data.get('product') || '—';
+        const message = data.get('message') || '';
+        const subject = encodeURIComponent('AI Plus Labs inquiry from ' + name);
+        const body = encodeURIComponent(
+          'Name: ' + name + '
+' +
+          'Email: ' + email + '
+' +
+          'Company: ' + company + '
+' +
+          'Product interest: ' + product + '
+
+' +
+          message
+        );
+        const mailto = `mailto:hello@aipluslabs.com?subject=${subject}&body=${body}`;
+        // open mail client
+        window.location.href = mailto;
+        status.textContent = 'Opening mail app...';
+        setTimeout(()=>{ status.textContent = 'If nothing opened, please email hello@aipluslabs.com'; },2500);
+      });
+    })();
+  </script>
+</body>
+</html>
